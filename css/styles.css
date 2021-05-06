@@ -1,0 +1,133 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+body{
+  background: #3b3f45;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  border: 25px solid #fff;
+}
+.container{
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  padding: 0 200px 100px 200px;  
+}
+.sh-list {
+  background: #4a4f56;
+  height: 166px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1190px;
+  margin: 0 0 40px 0;
+  padding: 35px 0 30px 0;
+  line-height: 1.5;
+  
+  
+}
+.sh-list__title {
+  font-weight: 600;
+  font-size: 48px;  
+}
+
+.text {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #e57c7f;
+}
+  
+  
+.sh-list__text {
+  font-size: 30px;  
+}
+.sh-list__items{
+  width: 800px;
+  margin: 0 0 40px 0;
+}
+.sh-list__items li{
+  list-style: none;
+  display: flex;
+  height: 64px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  padding: 35px 50px;
+  line-height: 0;
+  position: relative;
+  cursor: pointer;
+}
+.sh-list__item input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.sh-list__items li:nth-child(odd){
+  background: #88839e;
+}
+.sh-list__items li:nth-child(even){
+  background: #7a7593;
+}
+
+.sh-list__item:before{
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background:#888;
+  border: 1px solid #444;
+  position: absolute;
+  top: 25px;
+  left: 15px;
+}
+
+.sh-list__item:after{
+  padding: 0 0 0 25px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.sh-list__item:first-child:after {
+  content: ' (for the next lessons about CSS)';
+  
+}
+.sh-list__item:nth-child(2):after{
+  content: '(for more CSS manipulations)';
+}
+.sh-list__item:nth-child(3):after{
+  content: ' (because they are awesome)';
+}
+.sh-list__item:nth-child(4):after{
+  content: '(hm... they always dissappear)';
+}
+.sh-list__item:nth-child(5):after{
+  content: '';
+}
+.sh-list__item:nth-child(6):after{
+  content: '(for my friends)';
+}
+.sh-list__items li:hover{
+  background: #625e77;
+  border-bottom:  3px solid #fff;
+  border-top:  3px solid #fff;
+}
+.sh-list__items li:active{
+  background:  #e57c7f;
+
+}
+.sh-list__footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 75px;
+  background: #4a4f56;
+}
+*{
+  transition: all .1s ease-in;
+} 
+
